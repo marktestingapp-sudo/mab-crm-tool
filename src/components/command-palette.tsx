@@ -52,7 +52,7 @@ export function CommandPalette() {
           {actions.map((action) => (
             <Link
               key={action.label}
-              href={action.href}
+              href={action.href as any}
               className="flex items-center justify-between rounded-xl border border-mab-gold/20 px-4 py-3 text-sm text-mab-navy transition hover:-translate-y-0.5 hover:border-mab-gold hover:shadow-glow"
               onClick={close}
             >
