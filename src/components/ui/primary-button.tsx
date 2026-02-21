@@ -28,7 +28,7 @@ export function PrimaryButton({
 
   if (href) {
     return (
-      <Link href={href} className={className} aria-label={ariaLabel ?? label}>
+      <Link href={href as any} className={className} aria-label={ariaLabel ?? label}>
         {label}
       </Link>
     );

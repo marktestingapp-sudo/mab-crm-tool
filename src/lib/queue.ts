@@ -22,7 +22,7 @@ export async function enqueueJob({
     update: {},
     create: {
       type,
-      payload,
+      payload: payload as any,
       idempotencyKey,
       runAt
     }

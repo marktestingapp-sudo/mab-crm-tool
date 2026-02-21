@@ -60,7 +60,7 @@ export function MobileNav({
             return (
               <Link
                 key={item.href}
-                href={item.href}
+                href={item.href as any}
                 onClick={onClose}
                 className={`block rounded-xl border px-4 py-3 text-mab-navy shadow-sm transition ${
                   isActive

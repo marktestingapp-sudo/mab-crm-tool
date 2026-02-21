@@ -39,7 +39,7 @@ export function Sidebar() {
           return (
             <Link
               key={item.href}
-              href={item.href}
+              href={item.href as any}
               className={`group flex items-center justify-between rounded-xl px-4 py-3 transition ${
                 isActive
                   ? "bg-mab-navy text-white"
